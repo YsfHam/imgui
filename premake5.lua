@@ -32,3 +32,8 @@ project "ImGui"
         "CoreVideo.framework",
         "OpenGL.framework",
 	}
+
+	filter "configurations:Debug"
+        symbols "On"
+    filter "configurations:Release"
+        optimize "On"
